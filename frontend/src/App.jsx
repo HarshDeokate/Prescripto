@@ -13,6 +13,7 @@ import Appointment from './pages/Appointment.jsx'
 import Navbar from './components/Navbar.jsx'
 import Footer from './components/Footer.jsx'
 import Receipt from './pages/Receipt'
+import SmartAI from './pages/SmartAI.jsx'
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
         <Route path='/my-appointments' element={<MyAppointments />} />
         <Route path='/appointment/:docId' element={<Appointment />} />
         <Route path='/receipt/:id' element={<Receipt/>}/>
+        <Route path='/smartai' element={<SmartAI/>}/>
         <Route path="*" element={<h1>404 - Page Not Found</h1>} />
       </Routes>
       <Footer />
